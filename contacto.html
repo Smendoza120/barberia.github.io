@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Contacto - Barberia Alura</title>
+  </head>
+  <body>
+    <header class="header__container">
+      <img class="header__logo" src="./images/logo.png" alt="Logo de la barberia Alura" />
+
+      <nav class="header__nav">
+        <ul class="header__contenido">
+          <li class="header__contenido-lista">
+            <a class="header__contenido-lista-enlace" href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li class="header__contenido-lista">
+            <a class="header__contenido-lista-enlace" href="./productos.html"
+              >Productos</a
+            >
+          </li>
+          <li class="header__contenido-lista">
+            <a class="header__contenido-lista-enlace" href="./contacto.html"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="formulario">
+      <form class="formulario__contenedor">
+        <label class="formulario__label" for="nombre">Nombre y Apellido</label>
+        <input
+          class="formulario__input"
+          type="text"
+          placeholder="Nombre"
+          id="nombre"
+          required
+        />
+
+        <label class="formulario__label" for="correo">Correo Electrónico</label>
+        <input
+          class="formulario__input"
+          type="email"
+          placeholder="email@dominio.com"
+          id="correo"
+          required
+        />
+
+        <label class="formulario__label" for="telefono">Teléfono</label>
+        <input
+          class="formulario__input"
+          type="tel"
+          placeholder="(XX) XXXX XXXX"
+          id="telefono"
+          required
+        />
+
+        <label class="formulario__label" for="formulario__mensaje"
+          >Mensaje</label
+        >
+        <textarea
+          class="formulario__mensaje"
+          name="mensaje"
+          id="formulario__mensaje"
+          placeholder="Mensaje"
+        ></textarea>
+
+        <legend class="formulario__label"></legend>
+          ¿Como le gustaría que lo contactemos?
+        </legend>
+
+        <div class="formulario__contenedor-contactos">
+          <div class="formulario__contenedor-contacto">
+            <input type="radio" id="radio__email" name="contacto" />
+            <label class="formulario__label" for="radio__email">Email</label>
+          </div>
+
+          <div class="formulario__contenedor-telefono">
+            <input type="radio" id="radio__telefono" name="contacto" />
+            <label class="formulario__label" for="radio__telefono"
+              >Teléfono</label
+            >
+          </div>
+
+          <div class="formulario__contenedor-whatsapp">
+            <input type="radio" id="radio__whatsapp" name="contacto" checked />
+            <label class="formulario__label" for="radio__whatsapp"
+              >WhatsApp</label
+            >
+          </div>
+        </div>
+
+        <legend class="formulario__label">
+          ¿En cuál horario prefiere ser atendido?
+        </legend>
+        <div class="formulario__contenedor-horario">
+          <select name="" id="atencion">
+            <option value="">Mañana</option>
+            <option value="">Tarde</option>
+            <option value="">Noche</option>
+          </select>
+        </div>
+
+        <div>
+          <input type="checkbox" id="informacion__alura" checked />
+          <label class="formulario__label" for="informacion__alura"
+            >¿Le gustaria recibir novedades de la Barberia Alura?</label
+          >
+        </div>
+
+        <input
+          class="formulario__boton"
+          type="submit"
+          value="Enviar Formulario"
+        />
+      </form>
+
+      <div class="formulario__contenedor-tabla">
+        <table class="formulario__tabla">
+          <thead>
+            <tr>
+              <th class="formulario__tabla-columnas">Dia</th>
+              <th class="formulario__tabla-columnas">Horario</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>08h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Miercoles</td>
+              <td>08h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Viernes</td>
+              <td>08h ~ 20h</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="footer__container">
+      <img
+        class="footer__imagen"
+        src="./images/logo-blanco.png"
+        alt="Logo de la barberia Alura"
+      />
+      <p class="footer__copyright">© Copyright Barberia Alura - 2022</p>
+    </footer>
+  </body>
+</html>

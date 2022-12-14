@@ -1,0 +1,124 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #ccc;
+    padding: 30px 0;
+  }
+  &__contenido{
+    display: flex;
+    font-size: 1.5em;
+    gap: 15px;
+    list-style: none;
+    &-lista{
+      &-enlace{
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: .2s linear;
+        &:hover{
+          color: #c78c19;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  @media (max-width: 375px){
+    &__container{
+      width: 100%;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__logo{
+      width: 150px;
+    }
+    &__contenido{
+      font-size: 1.1em;
+    }
+  }
+}
+
+.cards{
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 80px 0;
+  }
+  &__card{
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 280px;
+    height: 390px;
+    transition: .2s linear;
+    &:hover{
+      border: 2px solid #c78c19;
+      cursor: pointer;
+    }
+    &:active{
+      border: 2px solid #088c19;
+    }
+  }
+  &__titulo{
+    font-size: 1.7em;
+    transition: .2s linear;
+  }
+  &__imagen{
+    width: 220px;
+  }
+  &__metodos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__metodo{
+    text-align: center;
+  }
+  &__precio{
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  @media (max-width: 375px){
+    &__container{
+      overflow-x: auto;
+      justify-content: start;
+      padding: 0 10px;
+    }
+    &__titulo{
+      font-size: 1.5em;
+    }
+  }
+}
+.cards__card:hover .cards__titulo{
+  font-size: 2em;
+}
+
+.footer{
+  &__container{
+    background: url('../images/bg.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  &__copyright{
+    color: #fff;
+  }
+  @media (max-width: 375px){
+    &__imagen{
+      width: 150px;
+    }
+  }
+}
+
