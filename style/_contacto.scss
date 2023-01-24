@@ -1,3 +1,5 @@
+@import './variables';
+
 .formulario {
   display: flex;
   align-items: center;
@@ -19,7 +21,7 @@
       select {
         padding: 10px 10px 10px 0;
         border-radius: 3px;
-        background: rgba(204, 204, 204, 0.603);
+        background: $Formulario;
       }
     }
     &-opciones {
@@ -38,8 +40,8 @@
     padding: 15px;
     width: 450px;
     border-radius: 2px;
-    border: 1px solid #000;
-    background: #ccc;
+    border: 1px solid $ColorSecundario;
+    background: $Fondo;
     &:enabled {
       border: none;
     }
@@ -53,41 +55,41 @@
     min-height: 100px;
     max-height: 150px;
     padding: 5px;
-    background-color: #ccc;
+    background-color: $Fondo;
   }
   &__boton {
     padding: 10px 150px;
     margin-top: 20px;
-    background: #ffb82a;
+    background: $Boton;
     border: none;
     border-radius: 3px;
     font-weight: bold;
     font-size: 1.1em;
-    color: rgb(71, 71, 71);
+    color: $BotonLetras;
     transition: 0.3s linear;
     &:hover {
       cursor: pointer;
-      background: #ffa724;
-      color: #000;
+      background: $BotonHover;
+      color: $ColorSecundario;
       transform: scale(1.01);
-      -webkit-box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.57);
-      -moz-box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.57);
-      box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.57);
+      -webkit-box-shadow: 0px 0px 0px 2px $BotonSombras;
+      -moz-box-shadow: 0px 0px 0px 2px $BotonSombras;
+      box-shadow: 0px 0px 0px 2px $BotonSombras;
     }
   }
   &__tabla {
-    border: 1px solid black;
+    border: 1px solid $ColorSecundario;
     padding: 8px;
     text-align: start;
     &-columnas {
-      border: 1px solid black;
-      background: rgba(0, 0, 0, 0.8);
-      color: #fff;
+      border: 1px solid $ColorSecundario;
+      background: $TablasFondo;
+      color: $ColorTerciario;
       text-align: center;
       padding: 5px 10px;
     }
     tr td {
-      border: 1px solid black;
+      border: 1px solid $ColorSecundario;
       padding: 10px;
       text-align: center;
     }

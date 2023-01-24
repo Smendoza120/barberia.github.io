@@ -34,9 +34,9 @@
     border-radius: 3px;
     transition: .3s linear;
     &:hover{
-      -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
-        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0px 0px 10px 5px $SombraImagen;
+        -moz-box-shadow: 0px 0px 10px 5px $SombraImagen;
+        box-shadow: 0px 0px 10px 5px $SombraImagen;
     }
   }
   &__mision {
@@ -45,7 +45,7 @@
     margin: 15px 0;
     em {
       strong {
-        color: #f00;
+        color: $Subrayado;
       }
     }
   }
@@ -142,11 +142,10 @@
       width: 40%;
       transition: 0.3s linear;
       border-radius: 3px;
-
       &:hover {
-        -webkit-box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.75);
-        box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 15px 8px $SombraImagen;
+        -moz-box-shadow: 0px 0px 15px 8px $SombraImagen;
+        box-shadow: 0px 0px 15px 8px $SombraImagen;
       }
     }
   }
